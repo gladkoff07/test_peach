@@ -1,1 +1,1 @@
-Стартовый шаблон для верстки сайтов(pug, scss, gulp, webpack, webp).
+Тестовое_задание Frontend_developer Peach
