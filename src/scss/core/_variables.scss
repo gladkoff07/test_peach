@@ -1,0 +1,28 @@
+// Colors
+$colorWhite: #fff;
+$colorBlack: #000;
+$colorAccent: #f1c40f;
+
+$colorSlateGray: #2C3E50;
+$colorTurquoise: #2DB5D3;
+$colorThrushEgg: #00aec7;
+
+// Size
+$fontSize: 16px;
+$fontSizeSm: 14px;
+$fontLineHeight: 1.35;
+
+// Fonts
+$fontDefault: "Trebuchet MS";
+$fontFallback: Helvetica, sans-serif;
+$font: $fontDefault, $fontFallback;
+
+// Transition
+$varTrs: 0.3s ease-in-out;
+
+// Breakpoints
+$phoneXs: "(max-width: 375px)";
+$phoneSm: "(max-width: 575px)";
+$tabletPortrait: "(max-width: 767px)";
+$tabletLandscape: "(max-width: 1023px)";
+$largeDesktop: "(max-width: 1248px)";

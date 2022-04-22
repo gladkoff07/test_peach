@@ -1,0 +1,16 @@
+
+mixin about-us(className)
+  div(class=`about-us ${className}`)
+    //- img
+    .about-us__img
+      picture
+        source(media="(min-width: 575px)" srcset="img/img-about-us.webp 1x" type="image/webp")
+        source(media="(max-width: 576px)" srcset="img/img-about-us-mob.webp 1x" type="image/webp")
+        img(src="img/img-about-us.webp" alt="")
+    //- content
+    .about-us__content
+      p За 4 года успешной работы наши эксперты поставили более 10 тыс. единиц медицинской техники и инструмента, реализовали несколько сотен комплексных проектов клиник и кабинетов. Мы осуществляем медицинское оснащение на высоком уровне – для врачей, пациентов и бизнеса.
+      .about-us__work
+        .about-us__work-header Работа в
+          span &nbsp;Первой Медицинской компании
+        .about-us__work-content - это возможность реализовать свой потенциал и развить свои профессиональные компетенции в команде единомышленников!

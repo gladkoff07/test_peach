@@ -1,0 +1,16 @@
+
+mixin benefits(className)
+  div(class=`benefits swiper ${className} js-slider-benefits`)
+    .swiper-wrapper
+      +benefits-item('icon_benefits-education', 'Обучение', 'Помимо стандартного введения в должность и знакомства с продуктами «ПМК» дает возможность своим специалистам постоянно расширять свои знания и развивать компетенции за счет привлечения сторонних источников ')
+      +benefits-item('icon_benegits-office', 'Современный офис в центре города', 'На рабочем месте мы проводим большую часть жизни, поэтому мы сделали наш офис максимально комфортным и удобным')
+      +benefits-item('icon_benefits-corporate-holiday', 'Корпоративный отдых', 'Работать в «ПМК» круто еще и потому, что мы умеем отдыхать – с размахом и душой!')
+      +benefits-item('icon_benefits-health', 'Здоровье', '«ПМК» заботится о своих сотрудниках! У нас действует ДМС не только для команды, но и для членов их семей.')
+    .swiper-pagination
+
+mixin benefits-item(iconName, header, content)
+  .swiper-slide.benefits__item
+    .benefits__icon
+      +icon(iconName)
+    .benefits__header= header
+    .benefits__content= content

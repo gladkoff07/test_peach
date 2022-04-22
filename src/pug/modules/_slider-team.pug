@@ -1,0 +1,24 @@
+
+mixin slider-team(className)
+  div(class=`slider-team ${className} swiper js-slider-team`)
+    .swiper-wrapper
+      +swiper-slide-team('img-slide-team-1', 'img-slide-team-1-mob')
+      +swiper-slide-team('img-slide-team-2', 'img-slide-team-2-mob')
+      +swiper-slide-team('img-slide-team-3', 'img-slide-team-3-mob')
+      +swiper-slide-team('img-slide-team-4', 'img-slide-team-4-mob')
+      +swiper-slide-team('img-slide-team-5', 'img-slide-team-5-mob')
+
+    .swiper-pagination
+    .swiper-button-prev
+      +icon('icon_arrow-prev')
+    .swiper-button-next
+      +icon('icon_arrow-next')
+
+
+mixin swiper-slide-team(imgName, imgNameMob)
+  .swiper-slide
+    .slider-team__img
+      picture
+        source(media="(min-width: 575px)" srcset=`img/${imgName}.webp 1x` type="image/webp")
+        source(media="(max-width: 576px)" srcset=`img/${imgNameMob}.webp 1x` type="image/webp")
+        img(src="img/img-about-us.webp" loading="lazy" alt="")

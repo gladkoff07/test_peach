@@ -1,0 +1,74 @@
+
+@import './_intro';
+@import './_about-us';
+@import './_benefits';
+@import './_slider-team';
+@import './_slider-employees';
+
+.main {
+  padding: 0 25px 50px;
+
+  & > .container {
+    background: linear-gradient(180deg, #F5F5F5 0%, rgba(245, 245, 245, 0) 70.67%);
+  }
+
+  &__about-us {
+    margin-top: -35px;
+  }
+
+  &__benefits {
+    margin-top: -132px;
+  }
+
+  &__slider-team {
+    margin-top: 98px;
+  }
+
+  &__wrapper-slider-employees {
+    margin-top: 33px;
+    padding: 0 0 0 6.3%;
+  }
+
+  @include respond($largeDesktop) {
+
+    &__about-us {
+      margin-top: -15px;
+    }
+
+    &__benefits {
+      margin-top: -40px;
+    }
+  }
+
+  @include respond($tabletLandscape) {
+
+    &__about-us {
+      margin-top: 0;
+      padding: 20px 0;
+    }
+
+    &__benefits {
+      margin-top: 0;
+    }
+
+    &__slider-team {
+      margin-top: 50px;
+    }
+  }
+
+  @include respond($phoneSm) {
+
+    &__about-us {
+      padding: 43px 0 47px;
+    }
+
+    &__slider-team {
+      margin-top: 35px;
+    }
+
+    &__wrapper-slider-employees {
+      margin-top: 63px;
+      padding: 0 0 0 4.3%;
+    }
+  }
+}

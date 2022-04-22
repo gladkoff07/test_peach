@@ -1,0 +1,19 @@
+
+mixin intro
+  .intro
+    .intro__row
+      .intro__data
+        .logo.intro__logo
+          img(src="img/img-logo.webp" alt="")
+        .intro__description ПМК - динамично развивающаяся компания по продаже медицинского оборудования в России и Казахстане. Мы являемся официальным дилером Philips в России, а также партнерами более 500 компаний-производителей оборудования.
+      .intro__img
+        picture
+          source(media="(min-width: 575px)" srcset="img/img-intro.webp 1x" type="image/webp")
+          source(media="(max-width: 576px)" srcset="img/img-intro-mob.webp 1x" type="image/webp")
+          img(src="img/img-intro.webp" alt="")
+    //- vacancies
+    .vacancies.intro__vacancies
+      .vacancies__data
+        span.vacancies__data-site www.permedcom.ru
+        span.vacancies__data-limit 6+
+      a(href="#" target="_blank" class="vacancies__link") Вакансии

@@ -1,0 +1,26 @@
+extends template/_main
+
+include modules/_intro
+include modules/_about-us
+include modules/_benefits
+include modules/_slider-team
+include modules/_slider-employees
+
+block variables
+  - var title = 'Главная страница'
+
+
+block content
+  //main
+  main.main.section
+    .container
+      // intro
+      +intro
+      // about-us
+      +about-us('main__about-us')
+      // benfits
+      +benefits('main__benefits')
+      // slider team
+      +slider-team('main__slider-team')
+      // slider employees
+      +slider-employees('main__wrapper-slider-employees')

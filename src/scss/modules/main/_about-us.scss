@@ -1,0 +1,84 @@
+
+.about-us {
+  @include alignJustify(space-between, center);
+
+  &__img {
+    width: 42%;
+
+    img {
+      width: 100%;
+      max-width: 524px;
+    }
+  }
+
+  &__content {
+    width: 53.7%;
+    padding: 0 10.4% 116px 0;
+
+    p {}
+  }
+
+  &__work {
+    margin-top: 37px;
+
+    &-header {
+      @include fontFamily(24px, 'Trebuchet MS Bold');
+      text-transform: uppercase;
+
+      span {
+        color: $colorTurquoise;
+      }
+    }
+
+    &-content {
+      margin-top: 10px;
+    }
+  }
+
+  @include respond($largeDesktop) {
+
+    &__content {
+      padding: 0 10% 50px 0;
+    }
+  }
+
+  @include respond($tabletLandscape) {
+
+    &__content {
+      padding: 4% 0 0 0;
+    }
+  }
+
+  @include respond($tabletPortrait) {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    &__img {
+      width: 94%;
+    }
+
+    &__content {
+      width: 100%;
+      margin-top: 45px;
+      padding: 0 11px;
+
+      p {
+        line-height: 1.43;
+      }
+    }
+
+    &__work {
+      margin-top: 32px;
+
+      &-header {
+        letter-spacing: -1.2px;
+        line-height: 1.31;
+      }
+
+      &-content {
+        line-height: 1.4;
+      }
+    }
+  }
+}
